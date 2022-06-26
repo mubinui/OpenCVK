@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class ImageUndistortion {
+public class ImageUndistortion {
+    public static void main(String[] args) {
+
+    }
 }

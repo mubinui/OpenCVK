@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78cc2e84-401d-410c-9019-487755b3a81e" name="Changes" comment="" />
+    <list default="true" id="78cc2e84-401d-410c-9019-487755b3a81e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenCV02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CircleDetection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Distance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageUndistorsionFinal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageUndistortion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IndentationError/YourService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PoseEstimition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quaternion/Mat33f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quaternion/Quaternion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quaternion/QuaternionTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YourService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2AAvyIynl5LBDrCYwpgD62q9Th6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OpenCV/opencv/build/java/x64/opencv_java455.dll&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.QuaternionTester">
+    <configuration name="CircleDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CircleDetection" />
+      <module name="OpenCV02" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads\openjfx-18.0.1_windows-x64_bin-sdk\javafx-sdk-18.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoseEstimition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PoseEstimition" />
+      <module name="OpenCV02" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads\openjfx-18.0.1_windows-x64_bin-sdk\javafx-sdk-18.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuaternionTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quaternion.QuaternionTester" />
+      <module name="OpenCV02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Quaternion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rectangle" />
+      <module name="OpenCV02" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads\openjfx-18.0.1_windows-x64_bin-sdk\javafx-sdk-18.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VideoCapture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VideoCapture" />
+      <module name="OpenCV02" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.QuaternionTester" />
+      <item itemvalue="Application.Rectangle" />
+      <item itemvalue="Application.VideoCapture" />
+      <item itemvalue="Application.PoseEstimition" />
+      <item itemvalue="Application.CircleDetection" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuaternionTester" />
+        <item itemvalue="Application.CircleDetection" />
+        <item itemvalue="Application.Rectangle" />
+        <item itemvalue="Application.PoseEstimition" />
+        <item itemvalue="Application.VideoCapture" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,7 +132,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654465456477</updated>
+      <workItem from="1654465457782" duration="752000" />
+      <workItem from="1654466224526" duration="3131000" />
+      <workItem from="1654469688201" duration="136000" />
+      <workItem from="1654525447483" duration="3857000" />
+      <workItem from="1654529343261" duration="736000" />
+      <workItem from="1654672271395" duration="600000" />
+      <workItem from="1655212427123" duration="2172000" />
+      <workItem from="1655228071992" duration="5396000" />
+      <workItem from="1655234790758" duration="2284000" />
+      <workItem from="1655545705254" duration="73000" />
+      <workItem from="1655580447459" duration="3751000" />
+      <workItem from="1655635057359" duration="1872000" />
+      <workItem from="1655636952493" duration="1252000" />
+      <workItem from="1655639552938" duration="21000" />
+      <workItem from="1655753350608" duration="1376000" />
+      <workItem from="1655805761015" duration="1397000" />
+      <workItem from="1655807411058" duration="265000" />
+      <workItem from="1655821289162" duration="7725000" />
+      <workItem from="1655839294133" duration="6535000" />
+      <workItem from="1655902461853" duration="1935000" />
+      <workItem from="1655975893154" duration="3949000" />
+      <workItem from="1655981613186" duration="814000" />
+      <workItem from="1655999626890" duration="1111000" />
+      <workItem from="1656014472744" duration="4101000" />
+      <workItem from="1656067108783" duration="2506000" />
+      <workItem from="1656079038953" duration="696000" />
+      <workItem from="1656115257358" duration="762000" />
+      <workItem from="1656116070117" duration="187000" />
+      <workItem from="1656116554406" duration="925000" />
+      <workItem from="1656194824254" duration="283000" />
+      <workItem from="1656235673079" duration="3720000" />
+      <workItem from="1656253957158" duration="24000" />
+      <workItem from="1656268603385" duration="4000" />
+      <workItem from="1656273643509" duration="766000" />
+      <workItem from="1656275463036" duration="942000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
