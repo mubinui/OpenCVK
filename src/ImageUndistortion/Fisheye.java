@@ -1,3 +1,4 @@
+package ImageUndistortion;
 
 //import org.opencv.core.Core;
 //import org.opencv.core.Mat;
@@ -17,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.stage.Stage;
+import org.opencv.calib3d.Calib3d;
 import org.opencv.core.*;
 import org.opencv.core.Point;
 import org.opencv.highgui.HighGui;
@@ -28,37 +30,42 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public class CircleDetection extends Application { // extends Application
+public class Fisheye extends Application { // extends Application
     public void start(Stage stage) throws IOException {
-        //Loading the OpenCV core library
         System.loadLibrary( Core.NATIVE_LIBRARY_NAME );
-//        String file = "D:\\Backgrounds\\Screenshot 2022-06-06 035115.png";
-        String file = "D:\\KIBOPICS\\Undistorted.png";
-        Mat src = Imgcodecs.imread(file);
-        Imgproc.resize(src,src, new Size(0, 0), 1.5, 1.5,
-                Imgproc.INTER_AREA);
-        //Converting the image to Gray
-        Mat gray = new Mat();
-        Imgproc.cvtColor(src, gray, Imgproc.COLOR_RGBA2GRAY);
-        //Blurring the image
-        Mat blur = new Mat();
-        Imgproc.medianBlur(src, blur, 5);
-        //Detecting the Hough Circles
-        Mat circles = new Mat();
-        Point center = new Point();
-        Imgproc.HoughCircles(gray, circles, Imgproc.HOUGH_GRADIENT, Math.PI/180, 150);
-        for (int i = 0; i < circles.cols(); i++ ) {
-            double[] data = circles.get(0, i);
-            center = new Point(Math.round(data[0]), Math.round(data[1]));
-            // circle center
-            Imgproc.circle(src, center, 1, new Scalar(0, 0, 255), 1, 8, 0 );
-            // circle outline
-            int radius = (int) Math.round(data[2]);
-            Imgproc.circle(src, center, radius, new Scalar(0,0,255), 3, 8, 0 );
+        float fishVal = 450.0f;
+        float cX = 640;
+        float cY = 480;
+        Mat K = new Mat(3, 3, CvType.CV_32FC1);
+        K.put(0, 0, new float[]{fishVal, 0, cX});
+        K.put(1, 0, new float[]{0, fishVal, cY});
+        K.put(2, 0, new float[]{0, 0, 1});
+
+        Mat D = new Mat(1, 4, CvType.CV_32FC1);
+        D.put(0, 0, new float[]{0, 0, 0, 0});
+
+        Mat Knew = K.clone();
+        Knew.put(0, 0, new float[]{fishVal * 0.4f, 0.0f, cX});
+        Knew.put(1, 0, new float[]{0.0f, fishVal * 0.4f, cY});
+        Knew.put(2, 0, new float[]{0.0f, 0.0f, 1.0f});
+        Mat image = Imgcodecs.imread("D:\\KIBOPICS\\Target1Adjusted.png");
+        Mat greyScaleMat = new Mat();
+
+
+        Imgproc.cvtColor(image, greyScaleMat, Imgproc.COLOR_RGBA2GRAY);
+        System.out.println(image.size());
+        double [] ud = greyScaleMat.get(640,480);
+        for(double x : ud){
+            System.out.print(x+" ");
         }
-        System.out.println(center.toString());
+
+        Mat dst = new Mat(greyScaleMat.rows(), greyScaleMat.cols(), greyScaleMat.type());
+        Calib3d.fisheye_undistortImage(greyScaleMat, dst, K, D, Knew);
+
+
+
         //Converting matrix to JavaFX writable image
-        Image img = HighGui.toBufferedImage(src);
+        Image img = HighGui.toBufferedImage(dst);
         WritableImage writableImage= SwingFXUtils.toFXImage((BufferedImage) img, null);
         //Setting the image view
         ImageView imageView = new ImageView(writableImage);
@@ -75,5 +82,5 @@ public class CircleDetection extends Application { // extends Application
     }
     public static void main(String args[]) {
         launch(args);
-}
+    }
 }
